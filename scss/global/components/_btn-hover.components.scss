@@ -1,0 +1,21 @@
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--btn-border-1);
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--btn-hover-bg-color-1);
+    transition: all 0.4s ease;
+    // z-index: -1;
+  }
+
+  &:hover::before {
+    left: 0;
+  }
+}

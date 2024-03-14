@@ -1,0 +1,86 @@
+input {
+  cursor: pointer;
+
+  &:focus {
+    border: none;
+  }
+}
+
+// color-palet-1
+.warm-color-input,
+.summer-color-input,
+.pastel-color-input {
+  position: fixed;
+  left: 0;
+  top: 50%;
+
+  height: 3rem;
+  width: 3rem;
+  z-index: 9999;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170%;
+    height: 170%;
+    background-color: #eadbc8;
+  }
+}
+
+// color-palet-2
+.summer-color-input {
+  top: 60%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170%;
+    height: 170%;
+    background-color: #d4e7c5;
+  }
+}
+
+// color-palet-3
+.pastel-color-input {
+  top: 70%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170%;
+    height: 170%;
+    background-color: #4f6f52;
+  }
+}
+
+// setting-color-palet-1
+.warm-color-input:checked ~ .container > * {
+  --header-section-bg-color: #eadbc8;
+  --txt-color-1: #a58e74;
+  --btn-border-1: #b79e8279;
+  --font-weigh-200: 300;
+  --btn-hover-bg-color-1: rgba(128, 128, 128, 0.216);
+
+  --filter-grayscale-1: grayscale(16);
+}
+
+// setting-color-palet-2
+.summer-color-input:checked ~ .container > * {
+  --header-section-bg-color: #d4e7c5;
+}
+
+// setting-color-palet-2
+.pastel-color-input:checked ~ .container > * {
+  --header-section-bg-color: #4f6f52;
+  --txt-color-1: #e0ccbe;
+  --btn-border-1: #4f6f5229;
+  --font-weigh-200: 300;
+  --btn-hover-bg-color-1: #7390729c;
+  --filter-grayscale-1: hue-rotate(306deg);
+}
