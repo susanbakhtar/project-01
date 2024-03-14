@@ -50,9 +50,9 @@ body {
 
   &__img-container-1 {
     // max-width: 23rem;
-    max-width: 20vw;
+    max-width: 25vw;
     left: 6%;
-    top: 23%;
+    top: 26%;
 
     @media only screen and (max-width: 1024px) {
       max-width: 33vw;
@@ -72,8 +72,7 @@ body {
       // max-width: 100vw;
       // height: 100vh;
       max-width: 100vw;
-      height: 60vh;
-      align-self: center;
+      height: 75vh;
     }
   }
 
